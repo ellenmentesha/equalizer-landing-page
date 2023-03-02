@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: url(assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 200px);
+    background-position-y: -260px;
+    overflow-x: hidden;
+}
+
+
+/* --------------HERO----------- */
+/* --------------HERO----------- */
+
+.hero {
+    margin: 40px 24px 170px;
+}
+
+.hero img {
+    margin-bottom: 60px;
+}
+
+.txt-box h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.454545px;
+    color: #191826;
+    margin-bottom: 20px;
+
+}
+
+.txt-box p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+}
+
+.mobile-illustration {
+    width: 208px;
+    transform: translateY(-82px);
+}
+
+/* ------------MAIN----------- */
+/* ------------MAIN----------- */
+
+.main {
+    background: #191826;
+    border-radius: 12px;
+    background-image: url(assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* -------PREMIUM------- */
+
+.premium {
+    background: #FA7453;
+    border-radius: 12px;
+    padding: 48px 37px;
+    color: #FCFAF9;
+}
+
+.premium h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.premium p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 12px;
+    margin-bottom: 36px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price span:first-child {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    margin-right: 16px;
+}
+
+.price span:nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+.premium button {
+    font-family: 'IBM Plex Sans';
+    width: 296px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.premium button img {
+    height: 17px;
+    width: 15px;
+}
+
+.ios {
+    background: #191826;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #FCFAF9;
+}
+
+.android {
+    color: #191826;
+}
+
+
+/* -----------FOOTER--------- */
+/* -----------FOOTER--------- */
+
+footer {
+    margin: 63px 24px 80px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ------------------MEDIA---------------- */
+/* ------------------MEDIA---------------- */
+@media (min-width:768px) {
+    body {
+        background: url(assets/bg-main-tablet.png), url(assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% + 144px), calc(100% + 32px);
+        background-position-y: -353px, -30px;
+        background-size: auto, 266px 400px;
+    }
+
+    /* --------HERO-------- */
+    /* --------HERO-------- */
+    .hero {
+        margin: 0;
+        margin-bottom: 250px;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    .container {
+        margin: 62px 33px 85px;
+    }
+
+    .hero img {
+        margin-bottom: 95px;
+    }
+
+    .txt-box {
+        width: 73%;
+    }
+
+    .txt-box h1 {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.727273px;
+        margin-bottom: 28px;
+    }
+
+    .txt-box p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* --------MAIN--------- */
+    /* ---------MAIN------- */
+
+    .main {
+        background-position-x: 230px;
+        background-position-y: -50px;
+        align-items: flex-start;
+        padding: 40px 65px;
+        height: 600px;
+    }
+
+    .mobile-illustration {
+        width: 270px;
+        transform: translateY(-186px);
+    }
+
+    .premium {
+        width: 400px;
+        transform: translate(-94px, 99px);
+    }
+
+    .premium h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .premium p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    /* -------FOOTER------- */
+    /* -------FOOTER------- */
+
+    footer {
+        margin-top: 180px;
+    }
+
+    footer img {
+        margin-bottom: 32px;
+    }
+
+    footer p {
+        width: 52%;
+        margin: 0;
+    }
+
+    section {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width:1360px) {
+    body {
+        background: url(assets/bg-main-desktop.png), url(assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% + 144px), 100%;
+        background-position-y: -353px, -30px;
+        background-size: auto, 266px 400px;
+    }
+
+    .container {
+        margin: 32px 165px 90px;
+    }
+
+    .hero {
+        margin-bottom: 320px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+
+    /* ------HERO------ */
+    /* ------HERO------ */
+    .txt-box {
+        width: 78%;
+    }
+
+    .hero h1 {
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    /* ------MAIN----- */
+    /* ------MAIN----- */
+    .main {
+        background-position-x: 322px;
+        padding: 40px 130px;
+    }
+
+    .premium h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .premium p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .premium {
+        transform: translate(69px, 50px);
+    }
+
+    footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    [alt="footer-logo"] {
+        margin-right: 130px;
+    }
+
+    footer p {
+        width: 40%;
+    }
+
+}
+
+@media (min-width:1900px) {
+
+    .txt-box {
+        width: 58%;
+    }
+
+    .main {
+        background-position-x: 365px;
+    }
+
+    .premium {
+        width: 450px;
+        text-align: center;
+    }
+
+    .hero p,
+    .premium p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .premium h2 {
+        font-size: 42px;
+        line-height: 54px;
+    }
+
+    .premium button {
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.9px;
+    }
+
+    footer p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+
+/* -----------HOVER----------- */
+/* -----------HOVER----------- */
+
+
+.ios:hover {
+    background: #66E2DC;
+}
+
+.android:hover {
+    background: #FFB964;
+}
+
+img[alt="icon"]:hover {
+    filter: invert(62%) sepia(56%) saturate(3843%) hue-rotate(328deg) brightness(106%) contrast(96%);
+}
